@@ -9,7 +9,7 @@ const Header = props => {
     return <Fragment>
         <header className={classes.header}>
             <h1>JennyBooMeals</h1>
-            <HeaderCartButton />
+            <HeaderCartButton onClick={props.onShowCart}/>
         </header>
         <div className={classes['main-image']}>
             {/* 어떤 서버에 있는 이미지라면 그 이미지에 대한 URL 을 쓰면 됨 */}
